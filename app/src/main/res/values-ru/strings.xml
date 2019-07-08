@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherFirst</string>
+    <string name="saint_petersburg">Санкт-Петербург</string>
+    <string name="partially_cloudy">переменная облачность</string>
+    <string name="today_8_07">Сегодня 8.07</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресение</string>
+</resources>
