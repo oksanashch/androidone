@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/tableCity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/moscow"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="20°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableCity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/st_petersburg"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="11°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/novosibirsk"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="17°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/yekaterinburg"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="23°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/nizhny_novgorod"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="26°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/kazan"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="20°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/chelyabinsk"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="18°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/omsk"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="22°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/samara"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="20°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/rostov_on_don"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="28°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableCity11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="@string/ufa"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_margin="12dp"
+            android:text="26°"
+            android:gravity="center_horizontal"
+            android:textSize="30sp">
+        </TextView>
+
+    </TableRow>
+
+
+
+
+</TableLayout>
