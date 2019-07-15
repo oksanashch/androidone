@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,20 +10,15 @@
 
     <TextView
         android:id="@+id/cityName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
         android:layout_marginBottom="14dp"
+        android:gravity="center"
         android:text="@string/saint_petersburg"
         android:textSize="42dp"
         app:layout_constraintBottom_toTopOf="@+id/weatherСonditions"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -53,7 +49,7 @@
         android:layout_marginEnd="167dp"
         android:layout_marginRight="167dp"
         android:layout_marginBottom="446dp"
-        android:text="11°"
+        android:text="19°"
         android:textSize="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +83,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="391dp"
-        android:text="@string/thursday"
+        android:text="@string/monday"
         android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,81 +104,6 @@
         app:layout_constraintVertical_bias="0.2">
 
 
-
-
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="12dp"
-                android:text="@string/friday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:scaleType="center"
-                android:src="@drawable/partlycloud"></ImageView>
-
-            <TextView
-                android:id="@+id/TextView4"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="16°"
-                android:textSize="20sp"></TextView>
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="12dp"
-                android:text="@string/saturday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:scaleType="center"
-                android:src="@drawable/rain">></ImageView>
-
-            <TextView
-                android:id="@+id/TextView5"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="15°"
-                android:textSize="20sp"></TextView>
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="12dp"
-                android:text="@string/sunday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:scaleType="center"
-                android:src="@drawable/rain"></ImageView>
-
-            <TextView
-                android:id="@+id/TextView6"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="13°"
-                android:textSize="20sp">
-            </TextView>
-
-        </TableRow>
-
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="match_parent"
@@ -190,7 +111,7 @@
 
             <TextView
                 android:layout_margin="12dp"
-                android:text="@string/monday"
+                android:text="@string/tuesday"
                 android:textSize="20sp" />
 
             <ImageView
@@ -202,7 +123,7 @@
                 android:id="@+id/TextView1"
                 android:layout_margin="12dp"
                 android:gravity="center_horizontal"
-                android:text="18°"
+                android:text="23°"
                 android:textSize="20sp"></TextView>
 
 
@@ -226,7 +147,7 @@
                 android:id="@+id/TextView2"
                 android:layout_margin="12dp"
                 android:gravity="center_horizontal"
-                android:text="14°"
+                android:text="20°"
                 android:textSize="20sp"></TextView>
 
         </TableRow>
@@ -250,8 +171,81 @@
                 android:id="@+id/TextView3"
                 android:layout_margin="12dp"
                 android:gravity="center_horizontal"
+                android:text="24°"
+                android:textSize="20sp"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="12dp"
+                android:text="@string/friday"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:scaleType="center"
+                android:src="@drawable/partlycloud"></ImageView>
+
+            <TextView
+                android:id="@+id/TextView4"
+                android:layout_margin="12dp"
+                android:gravity="center_horizontal"
                 android:text="21°"
                 android:textSize="20sp"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="12dp"
+                android:text="@string/saturday"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:scaleType="center"
+                android:src="@drawable/rain">></ImageView>
+
+            <TextView
+                android:id="@+id/TextView5"
+                android:layout_margin="12dp"
+                android:gravity="center_horizontal"
+                android:text="20°"
+                android:textSize="20sp"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="12dp"
+                android:text="@string/sunday"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:scaleType="center"
+                android:src="@drawable/rain"></ImageView>
+
+            <TextView
+                android:id="@+id/TextView6"
+                android:layout_margin="12dp"
+                android:gravity="center_horizontal"
+                android:text="21°"
+                android:textSize="20sp">
+            </TextView>
 
         </TableRow>
 
@@ -260,17 +254,31 @@
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:onClick="onClick"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/icon_list"
         android:contentDescription="@null"
+        android:onClick="onClick"
         android:scaleType="centerCrop"
+        android:src="@drawable/icon_list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@null"
+        android:onClick="onClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/set_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
