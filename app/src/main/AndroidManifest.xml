@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,9 +18,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".CitiesActivity"
+            android:configChanges="orientation|screenSize">
             android:label="@string/city_selection">
         </activity>
         <activity android:name=".SettingsActivity"
+            android:configChanges="orientation|screenSize">
             android:label="@string/settings_title">
         </activity>
 

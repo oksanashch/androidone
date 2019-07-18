@@ -1,284 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-
-    <TextView
-        android:id="@+id/cityName"
+    <ScrollView android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="14dp"
-        android:gravity="center"
-        android:text="@string/saint_petersburg"
-        android:textSize="42dp"
-        app:layout_constraintBottom_toTopOf="@+id/weatherСonditions"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
 
-    <TextView
-        android:id="@+id/weatherСonditions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="121dp"
-        android:layout_marginLeft="121dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginRight="121dp"
-        android:layout_marginBottom="22dp"
-        android:text="@string/partially_cloudy"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/temperature"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cityName" />
-
-    <TextView
-        android:id="@+id/temperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="166dp"
-        android:layout_marginLeft="166dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginRight="167dp"
-        android:layout_marginBottom="446dp"
-        android:text="19°"
-        android:textSize="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weatherСonditions" />
-
-    <TextView
-        android:id="@+id/todayData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="390dp"
-        android:text="@string/today"
-        android:textSize="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dayOFWeek"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weatherСonditions"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/dayOFWeek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="391dp"
-        android:text="@string/monday"
-        android:textSize="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/todayData"
-        app:layout_constraintTop_toBottomOf="@+id/cityName"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TableLayout
-        android:id="@+id/weekDays"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="*"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/todayData"
-        app:layout_constraintVertical_bias="0.2">
-
-
-        <TableRow
-            android:id="@+id/tableRow1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
 
             <TextView
-                android:layout_margin="12dp"
-                android:text="@string/tuesday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:scaleType="center"
-                android:src="@drawable/cloud"></ImageView>
-
-            <TextView
-                android:id="@+id/TextView1"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="23°"
-                android:textSize="20sp"></TextView>
-
-
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:id="@+id/cityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="14dp"
+                android:gravity="center"
+                android:text="@string/saint_petersburg"
+                android:textSize="42dp" />
 
             <TextView
-                android:layout_margin="12dp"
-                android:text="@string/wednesday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:scaleType="center"
-                android:src="@drawable/rain"></ImageView>
-
-            <TextView
-                android:id="@+id/TextView2"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="20°"
-                android:textSize="20sp"></TextView>
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:id="@+id/weatherСonditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/partially_cloudy"
+                android:textSize="25dp" />
 
             <TextView
-                android:layout_margin="12dp"
-                android:text="@string/thursday"
-                android:textSize="20sp" />
+                android:id="@+id/temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="16°"
+                android:textSize="70dp" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:scaleType="center"
-                android:src="@drawable/sun"></ImageView>
+            <TableRow
+                android:id="@+id/today_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_margin="2dip">
 
-            <TextView
-                android:id="@+id/TextView3"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="24°"
-                android:textSize="20sp"></TextView>
+                <TextView
+                    android:id="@+id/todayData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today"
+                    android:textSize="26dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_column="0"
+                    android:layout_weight="100"/>
 
-        </TableRow>
+                <TextView
+                    android:id="@+id/dayOFWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thursday"
+                    android:textSize="26dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_column="0"
+                    android:layout_weight="100"/>
 
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            </TableRow>
 
-            <TextView
-                android:layout_margin="12dp"
-                android:text="@string/friday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:scaleType="center"
-                android:src="@drawable/partlycloud"></ImageView>
-
-            <TextView
-                android:id="@+id/TextView4"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="21°"
-                android:textSize="20sp"></TextView>
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="12dp"
-                android:text="@string/saturday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:scaleType="center"
-                android:src="@drawable/rain">></ImageView>
-
-            <TextView
-                android:id="@+id/TextView5"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="20°"
-                android:textSize="20sp"></TextView>
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_margin="12dp"
-                android:text="@string/sunday"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:scaleType="center"
-                android:src="@drawable/rain"></ImageView>
-
-            <TextView
-                android:id="@+id/TextView6"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:text="21°"
-                android:textSize="20sp">
-            </TextView>
-
-        </TableRow>
+            <TableLayout
+                android:id="@+id/weekDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/todayData"
+                app:layout_constraintVertical_bias="0.3"
+                android:stretchColumns="*">
 
 
-    </TableLayout>
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp"
-        android:contentDescription="@null"
-        android:onClick="onClick"
-        android:scaleType="centerCrop"
-        android:src="@drawable/icon_list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+                    <TextView
+                        android:layout_margin="12dp"
+                        android:text="@string/friday"
+                        android:textSize="20sp" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="5dp"
-        android:contentDescription="@null"
-        android:onClick="onClick"
-        android:scaleType="centerCrop"
-        android:src="@drawable/set_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton1" />
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:scaleType="center"
+                        android:src="@drawable/partlycloud"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TextView4"
+                        android:layout_margin="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="21°"
+                        android:textSize="20sp"></TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="12dp"
+                        android:text="@string/saturday"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:scaleType="center"
+                        android:src="@drawable/rain">></ImageView>
+
+                    <TextView
+                        android:id="@+id/TextView5"
+                        android:layout_margin="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="20°"
+                        android:textSize="20sp"></TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="12dp"
+                        android:text="@string/sunday"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:scaleType="center"
+                        android:src="@drawable/rain"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TextView6"
+                        android:layout_margin="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="21°"
+                        android:textSize="20sp">
+                    </TextView>
+
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="12dp"
+                        android:text="@string/monday"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:scaleType="center"
+                        android:src="@drawable/cloud"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TextView1"
+                        android:layout_margin="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="23°"
+                        android:textSize="20sp"></TextView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="12dp"
+                        android:text="@string/wednesday"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:scaleType="center"
+                        android:src="@drawable/rain">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/TextView2"
+                        android:layout_margin="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="20°"
+                        android:textSize="20sp">
+                    </TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="12dp"
+                        android:text="@string/thursday"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:scaleType="center"
+                        android:src="@drawable/sun"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TextView3"
+                        android:layout_margin="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="24°"
+                        android:textSize="20sp"></TextView>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableRow
+                android:id="@+id/settings_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="onClick"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inf_icon" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="onClick"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/set_2" />
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="onClick"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_list" />
+
+            </TableRow>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

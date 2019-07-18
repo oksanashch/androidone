@@ -3,6 +3,7 @@ package com.example.weatherfirst;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -38,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.imageButton2:
                 intent = new Intent(this, SettingsActivity.class);
                 break;
+
+            case R.id.imageButton3:
+                String url = "https://ru.wikipedia.org/wiki/" + currentCity.getText().toString();
+                Uri uriUrl = Uri.parse(url);
+                intent = new Intent(Intent.ACTION_VIEW, uriUrl);
+                break;
+
 
             default:
                 break;

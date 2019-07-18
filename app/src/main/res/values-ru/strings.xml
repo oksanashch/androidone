@@ -3,7 +3,7 @@
     <string name="app_name">WeatherFirst</string>
     <string name="saint_petersburg">Санкт-Петербург</string>
     <string name="partially_cloudy">переменная облачность</string>
-    <string name="today">Сегодня 15.07</string>
+    <string name="today">Сегодня 18.07</string>
     <string name="monday">Понедельник</string>
     <string name="tuesday">Вторник</string>
     <string name="wednesday">Среда</string>
@@ -12,7 +12,6 @@
     <string name="saturday">Суббота</string>
     <string name="sunday">Воскресение</string>
     <string name="moscow">Москва</string>
-    <string name="st_petersburg">Санкт-Петербург</string>
     <string name="novosibirsk">Новосибирск</string>
     <string name="yekaterinburg">Екатеринбург</string>
     <string name="nizhny_novgorod">Нижний Новгород</string>
