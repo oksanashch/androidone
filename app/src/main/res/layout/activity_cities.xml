@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="*" >
+    android:fillViewport="true" >
+
+    <TableLayout
+        android:id="@+id/cities_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*" >
 
     <TableRow
         android:id="@+id/tableCity1"
@@ -33,7 +39,7 @@
 
         <TextView
             android:layout_margin="12dp"
-            android:text="@string/st_petersburg"
+            android:text="@string/saint_petersburg"
             android:textSize="30sp" />
 
 
@@ -233,8 +239,6 @@
         </TextView>
 
     </TableRow>
+    </TableLayout>
 
-
-
-
-</TableLayout>
+</ScrollView>

@@ -2,7 +2,7 @@
     <string name="app_name">WeatherFirst</string>
     <string name="saint_petersburg">Saint-Petersburg</string>
     <string name="partially_cloudy">partially cloudy</string>
-    <string name="today">Today 15.07</string>
+    <string name="today">Today 18.07</string>
     <string name="monday">Monday</string>
     <string name="tuesday">Tuesday</string>
     <string name="wednesday">Wednesday</string>
@@ -11,7 +11,6 @@
     <string name="saturday">Saturday</string>
     <string name="sunday">Sunday</string>
     <string name="moscow">Moscow</string>
-    <string name="st_petersburg">St. Petersburg</string>
     <string name="novosibirsk">Novosibirsk</string>
     <string name="yekaterinburg">Yekaterinburg</string>
     <string name="nizhny_novgorod">Nizhny Novgorod</string>
