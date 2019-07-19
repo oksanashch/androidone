@@ -25,7 +25,7 @@
                 android:layout_marginBottom="14dp"
                 android:gravity="center"
                 android:text="@string/saint_petersburg"
-                android:textSize="42dp" />
+                android:textSize="42sp" />
 
             <TextView
                 android:id="@+id/weatherСonditions"
@@ -34,7 +34,7 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:text="@string/partially_cloudy"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/temperature"
@@ -43,7 +43,7 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:text="16°"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
 
             <TableRow
                 android:id="@+id/today_date"
@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/today"
-                    android:textSize="26dp"
+                    android:textSize="26sp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:layout_column="0"
@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/thursday"
-                    android:textSize="26dp"
+                    android:textSize="26sp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:layout_column="0"

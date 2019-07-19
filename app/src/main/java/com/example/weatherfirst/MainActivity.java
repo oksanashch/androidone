@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView currentCity;
-    TextView currentTemterature;
+    private TextView currentCity;
+    private TextView currentTemterature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
